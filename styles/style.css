@@ -191,6 +191,7 @@ h4.title-decor {
   align-items: center;
   justify-items: center;
   block-size: 100vh;
+  min-block-size: 668px;
   position: relative;
 }
 
@@ -225,7 +226,7 @@ h4.title-decor {
   }
 
   .subtitle {
-  margin-block-end: 0;
+    margin-block-end: 0;
   }
 
   .gallery__item {

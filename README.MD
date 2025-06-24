@@ -2,4 +2,4 @@
 =================
 Сдача очередной *проектной работы*, с прикручиванием цветовых схем.  
 В отличии от предыдущих работ здесь реализованна **адаптивная вёрстка**.  
-https://github.com/AlenaSvyat/slozhno-sosredotochitsya-fd
+https://github.com/AlenaSvyat/slozhno-sosredotochitsya-fd 

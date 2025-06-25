@@ -1,10 +1,5 @@
 .page {
-  background-color: var(--bg-color, #000028);
-  background-image: var(--bg-image, url(../images/cover-image-dark.png));
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background: var(--bg-color, #000028) var(--bg-image, url(../images/cover-image-dark.png)) center / cover no-repeat fixed;
   font-family: var(--font, "IBM Plex mono", "Arial"), sans-serif;
   font-size: var(--font-size, 18px);
   font-weight: var(--normal, 400);
@@ -51,6 +46,7 @@
   inset-block-start: var(--global-padding, 10px);
   inset-inline-end: calc(var(--global-padding) + 8px);
   color: var(--accent-text-color, #ff0070);
+  text-transform: uppercase;
 }
 
 .decorate-element::after {
@@ -70,13 +66,12 @@
 }
 
 .header__theme-menu-button {
-  inline-size: 70px;
-  block-size: 26px;
+  padding: 1.5px 13px;
   background-color: transparent;
   color: var(--accent-text-color, #ff0070);
   border: none;
   text-transform: lowercase;
-  line-height: 0;
+  line-height: 23px;
 }
 
 .header__theme-menu-button:hover {
@@ -106,19 +101,11 @@
   text-shadow: 4px 4px 0 var(--accent-color, #ff0070);
 }
 
-h2.title {
-  text-shadow: 2px 2px 0 var(--accent-color, #ff0070);
-}
-
 .title-decor {
   background-color: var(--accent-color, #ff0070);
   font-weight: var(--bold, 700);
   color: #000028;
   margin-block-end: 10px;
-}
-
-h4.title-decor {
-  font-weight: var(--normal, 400);
 }
 
 .title-decor_no-margin {
@@ -151,13 +138,19 @@ h4.title-decor {
 .grid__main {
   display: grid;
   gap: 20px;
+  block-size: fit-content;
 }
 
 .main-text {
   color: var(--main-color, #f1b2ce);
 }
 
+.main-text:not(:last-of-type) {
+  margin-block-end: 10px;
+}
+
 .link {
+  text-decoration: none;
   text-shadow: 2px 2px var(--accent-color, #ff0070);
 }
 
@@ -172,6 +165,10 @@ h4.title-decor {
 
 .link:focus-visible {
   outline: 1px solid var(--main-color);
+}
+
+h4.title-decor {
+  font-weight: var(--normal, 400);
 }
 
 .gallery__item {
@@ -193,6 +190,10 @@ h4.title-decor {
   block-size: 100vh;
   min-block-size: 668px;
   position: relative;
+}
+
+h2.title {
+  text-shadow: 2px 2px 0 var(--accent-color, #ff0070);
 }
 
 @media (width >= 768px) {
